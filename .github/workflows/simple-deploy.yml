@@ -5,7 +5,9 @@ name: Simple Deploy
 
 on:
   workflow_dispatch:
-
+  push:
+    branches:
+      - master
 jobs:
   publish:
     runs-on: ubuntu-latest
