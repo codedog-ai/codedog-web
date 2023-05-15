@@ -8,14 +8,13 @@ export default defineAppConfig({
         socials: {
         },
         aside: {
-            level: 0,
+            level: 1,
             exclude: [],
             collapsed: false
         },
         header: {
             logo: false,
             showLinkIcon: true,
-            fluid: false,
         },
         footer: {
             credits: {
