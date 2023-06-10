@@ -26,7 +26,10 @@ export default defineAppConfig({
 
             ],
             textLinks: [
-
+                {
+                    text: "加入我们",
+                    href: "join_us"
+                }
             ],
             fluid: false
         }
