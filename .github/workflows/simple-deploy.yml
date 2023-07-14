@@ -19,7 +19,6 @@ jobs:
           node-version: 19
       - run: npm install
       - run: npm run generate
-      - run: cp robots.txt .output/public/ 
       - name: ssh-scp-ssh-pipelines
         uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.4
         with:
