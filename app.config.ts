@@ -2,7 +2,7 @@ export default defineAppConfig({
   docus: {
     title: "Codedog",
     description:
-      "Codedog is an AI powered code reivew assistant. Codedog helps you and your team automate the generation of merge request summaries and reviews.",
+      "Codedog is an AI powered code review assistant. Codedog helps you and your team automate the generation of merge request summaries and reviews.",
     image: "",
     url: "https://www.codedog.ai",
     layout: "default",
