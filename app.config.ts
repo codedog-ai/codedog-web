@@ -6,7 +6,20 @@ export default defineAppConfig({
     image: "",
     url: "https://www.codedog.ai",
     layout: "default",
-    socials: {},
+    socials: {
+      github: "codedog-ai/codedog",
+      discord: {
+        label: "Join Codedog community on Discord",
+        href: "https://discord.gg/tdDkEvKA",
+        icon: "ph:discord-logo-fill",
+        rel: "noopener",
+      },
+    },
+    github: {
+      root: "content",
+      edit: true,
+      contributors: false,
+    },
     aside: {
       level: 1,
       exclude: [],
