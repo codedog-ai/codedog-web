@@ -15,11 +15,6 @@ export default defineAppConfig({
         rel: "noopener",
       },
     },
-    github: {
-      root: "content",
-      edit: true,
-      contributors: false,
-    },
     aside: {
       level: 1,
       exclude: [],
@@ -38,7 +33,7 @@ export default defineAppConfig({
       iconLinks: [],
       textLinks: [
         {
-          text: "加入我们",
+          text: "join_us",
           href: "join_us",
         },
       ],
