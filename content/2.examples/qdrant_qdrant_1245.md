@@ -1,4 +1,4 @@
-# [qdrant #1245](https://github.com/qdrant/qdrant/pull/1245) 代码审查报告
+# [qdrant #1245](https://github.com/qdrant/qdrant/pull/1245) Code Review Report
 
 *powered by GPT3.5-Turbo and CodeDog 0.0.5*
 

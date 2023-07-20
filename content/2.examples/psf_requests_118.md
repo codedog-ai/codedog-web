@@ -1,4 +1,4 @@
-# [requests #118](https://github.com/psf/requests/pull/118) 代码审查报告
+# [requests #118](https://github.com/psf/requests/pull/118) Code Review Report
 
 *powered by GPT3.5-Turbo and CodeDog 0.0.5*
 

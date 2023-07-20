@@ -1,4 +1,4 @@
-# [ClickHouse #49113](https://github.com/ClickHouse/ClickHouse/pull/49113) 代码审查报告
+# [ClickHouse #49113](https://github.com/ClickHouse/ClickHouse/pull/49113) Code Review Report
 
 *powered by GPT3.5-Turbo and CodeDog 0.0.5*
 

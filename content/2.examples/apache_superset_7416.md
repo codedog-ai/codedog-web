@@ -1,4 +1,4 @@
-# [superset #7416](https://github.com/apache/superset/pull/7416) 代码审查报告
+# [superset #7416](https://github.com/apache/superset/pull/7416) Code Review Report
 
 *powered by GPT3.5-Turbo and CodeDog 0.0.5*
 

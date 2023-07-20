@@ -32,10 +32,10 @@ export default defineAppConfig({
       },
       iconLinks: [],
       textLinks: [
-        {
-          text: "join_us",
-          href: "join_us",
-        },
+        // {
+        //   text: "JOIN US",
+        //   href: "join_us",
+        // },
       ],
       fluid: false,
     },
