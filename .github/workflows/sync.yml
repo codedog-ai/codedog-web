@@ -1,0 +1,23 @@
+name: Sync to another repository
+on:
+  push:
+    branches: [master]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Push to another repository
+        env:
+          PERSONAL_GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }} # 储存你的 GitHub 访问密钥
+        run: |
+          git checkout master
+          git remote add target https://cloud26:${PERSONAL_GITHUB_TOKEN}@github.com/cloud26/codedog-web.git
+          git push target master
+    permissions:
+      contents: write # 不加则没权限 push
