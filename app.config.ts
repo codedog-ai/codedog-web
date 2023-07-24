@@ -32,10 +32,12 @@ export default defineAppConfig({
       },
       iconLinks: [],
       textLinks: [
-        // {
-        //   text: "JOIN US",
-        //   href: "join_us",
-        // },
+        {
+          text: 'Codedog 2023',
+          href: 'https://www.codedog.ai',
+          target: '_blank',
+          rel: 'noopener'
+        }
       ],
       fluid: false,
     },
