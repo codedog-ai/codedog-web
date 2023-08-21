@@ -26,15 +26,21 @@ export default defineAppConfig({
     },
     footer: {
       credits: {
-        icon: "IconDocus",
-        text: "Powered by Docus",
-        href: "https://docus.dev",
+        icon: "",
+        text: "",
+        href: "",
       },
       iconLinks: [],
       textLinks: [
         {
-          text: 'Codedog 2023',
+          text: '2023 Codedog',
           href: 'https://www.codedog.ai',
+          target: '_blank',
+          rel: 'noopener'
+        },
+        {
+          text: 'Privacy Policy',
+          href: 'https://www.freeprivacypolicy.com/live/d151dd2a-ffda-4037-8061-7e62c06a0595',
           target: '_blank',
           rel: 'noopener'
         }
