@@ -46,7 +46,10 @@ const handleLogin = async () => {
 }
 async function signInWithGitHub() {
     const { user, session, error } = await supabase.auth.signInWithOAuth({
-        provider: 'github',
+        provider: 'github', 
+        options: {
+          redirectTo: `${window.location.origin}/account`,
+        },
     })
 }
 </script>
