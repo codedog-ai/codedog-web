@@ -5,42 +5,28 @@
     <!-- <Avatar v-model:path="user.user_metadata.avatar_url" :size="10" />
     <ProseH2>{{ user.user_metadata.avatar_url }}</ProseH2> -->
     
-    <ProseH2>Your Account Details</ProseH2>
-    <ProseP>Email: {{ user.email }}</ProseP>
-    <ProseP>Username: {{ user.user_metadata.user_name }}</ProseP>
-    <ButtonLink icon="IconStackBlitz" @click="signOut">
-      Sign Out
-    </ButtonLink>
+    <!-- <ProseH2>Your Account Details</ProseH2>
+    <ProseP>Email: {{ user.email }}</ProseP> -->
 
-    <!-- <button type="button" class="button block" @click="signOut">
-      Sign Out
-    </button>
-    -->
-    <!-- <ProseH2>Your Projects</ProseH2>
-    <List v-for="project in projects" :key="project.id" class="primary">
-      {{ project.name }} - {{ project.full_name }} - {{ project.url }} 
-    </List>
-    <ProseH2 />
-     -->
-    <ProseH2>Your Installations</ProseH2>
-<!-- 
-    <List v-for="installation in installations" :key="installation.id" class="primary">
-      {{ installation.id }} - {{ installation.account.login }} - {{ installation.account.type }} - {{ installation.html_url }}
-    </List> -->
-    
-
+    <ProseH3>Your GitHub Installations</ProseH3>
     <div v-for="installation in installations" :key="installation.id">
-      <ProseH3>Installation id {{ installation.id }} Installation account: {{ installation.account.login }}</ProseH3>
+      <ProseH4>Account: {{ installation.account.login }}</ProseH4>
       <List v-for="repo in installation_repos[installation.id]" :key="repo.id">
-        {{ repo.id }} -- {{ repo.name }} -- {{ repo.full_name }} -- {{ repo.html_url }}
+        <a :href="repo.html_url">{{ repo.name }}</a>
       </List>
     </div>
     <ProseH2 />
     
-
-    <ButtonLink icon="IconStackBlitz" href="https://github.com/apps/codedog-assistant/installations/new" blank>
-      Add additional repositories.
-    </ButtonLink>
+    <div class="content">
+      <div class="actions">
+        <ButtonLink class="cta" bold size="medium" href="https://github.com/apps/codedog-assistant/installations/new">
+          Add additional repositories.
+        </ButtonLink>
+        <a class="secondary" @click="signOut">
+          Sign Out ->
+        </a>
+      </div>
+    </div>
   </DocsPageLayout>
 </template>
   
@@ -188,3 +174,37 @@ onMounted(async () => {
 
 
 </script>
+
+<style scoped lang="ts">
+css({
+  '.content': {
+      '@lg': {
+        gridColumn: 'span 2 / span 2'
+      },
+      '.actions': {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '{space.4}',
+        '@sm': {
+          flexDirection: 'row',
+          gap: '{space.6}'
+        },
+        '@lg': {
+          justifyContent: 'flex-start'
+        },
+        '.cta': {
+          marginBottom: 0
+        },
+        '.secondary': {
+          fontWeight: '{fontWeight.medium}',
+          color: '{elements.text.secondary.color.static}',
+          '&:hover': {
+            color: '{elements.text.secondary.color.hover}'
+          }
+        }
+      }
+    }
+})
+</style>
