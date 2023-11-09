@@ -10,7 +10,7 @@ export default defineAppConfig({
       github: "codedog-ai/codedog",
       discord: {
         label: "Join Codedog community on Discord",
-        href: "https://discord.gg/5sBAPD8X",
+        href: "https://discord.gg/qDWpB27jeg",
         icon: "ph:discord-logo-fill",
         rel: "noopener",
       },
