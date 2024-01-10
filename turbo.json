@@ -1,0 +1,54 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["**/.env.*local"],
+	"globalEnv": [
+		"NODE_ENV",
+		"PORT",
+		"NUXT_PUBLIC_SITE_URL",
+		"VERCEL_URL",
+		"LEMONSQUEEZY_WEBHOOK_SECRET",
+		"LEMONSQUEEZY_API_KEY",
+		"LEMONSQUEEZY_STORE_ID",
+		"STRIPE_SECRET_KEY",
+		"STRIPE_WEBHOOK_SECRET",
+		"MAIL_HOST",
+		"MAIL_PORT",
+		"MAIL_USER",
+		"MAIL_PASS",
+		"GITHUB_CLIENT_ID",
+		"GITHUB_CLIENT_SECRET",
+		"GOOGLE_CLIENT_ID",
+		"GOOGLE_CLIENT_SECRET",
+		"OPENAI_API_KEY",
+		"PLUNK_API_KEY",
+		"POSTMARK_SERVER_TOKEN",
+		"RESEND_API_KEY",
+		"NUXT_PUBLIC_GOOGLE_ANALYTICS_ID",
+		"NUXT_PUBLIC_MIXPANEL_TOKEN",
+		"NUXT_PUBLIC_PIRSCH_CODE",
+		"NUXT_PUBLIC_PLAUSIBLE_URL",
+		"NUXT_PUBLIC_UMAMI_TRACKING_ID"
+	],
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^db:generate", "^build"],
+			"outputs": ["dist/**", ".output/**"]
+		},
+		"check-types": {},
+		"clean": {
+			"cache": false
+		},
+		"db:generate": {
+			"cache": false
+		},
+		"db:push": {
+			"cache": false
+		},
+		"dev": {
+			"cache": false,
+			"dependsOn": ["^db:generate"],
+			"persistent": true
+		},
+		"lint": {}
+	}
+}

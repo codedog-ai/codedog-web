@@ -1,0 +1,11 @@
+{
+	"name": "utils",
+	"version": "0.0.0",
+	"dependencies": {
+		"eslint-config-custom": "workspace:*",
+		"tsconfig": "workspace:*"
+	},
+	"scripts": {
+		"lint": "eslint \"**/*.ts*\""
+	}
+}

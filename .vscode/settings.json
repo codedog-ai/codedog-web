@@ -1,0 +1,16 @@
+{
+	"editor.formatOnSave": true,
+	"tailwindCSS.experimental.classRegex": [["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
+	"tailwindCSS.experimental.configFile": "apps/web/tailwind.config.ts",
+	"typescript.preferences.importModuleSpecifier": "shortest",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+	"i18n-ally.localesPaths": ["apps/web/locales"],
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.enabledFrameworks": ["vue"]
+}

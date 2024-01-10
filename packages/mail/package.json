@@ -1,0 +1,15 @@
+{
+	"name": "mail",
+	"private": true,
+	"version": "0.0.0",
+	"dependencies": {
+		"eslint-config-custom": "workspace:*",
+		"tsconfig": "workspace:*",
+		"utils": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/nodemailer": "^6.4.11",
+		"nodemailer": "^6.9.5",
+		"vue-email": "^0.7.2"
+	}
+}
